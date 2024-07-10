@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- header   -->
+  <head>
+    <title>Soul Food Of Korea</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Online Magazine about the topic of Korean Food and some other basic recipes">
+    <meta name="keywords" content="Soul Food of Korea,Korean Food,Korean Food Trend">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="refresh" content="300">
+    <link rel="stylesheet" type="text/css" href="StyleSheets/style.css">
+    <script src="script/myJavaScript.js"> </script>
+  </head>
+     
+  <body>
+    <!-- Navigational links will be displayed here -->
+    <header>
+       <div id="headerlink">
+        <nav>
+          <!-- navigation bar for mobile version is refer to the the South London Online Bookclub website from coursera -->
+          <label for="toggle">&#9776;</label>
+          <input type="checkbox" id= "toggle"/>
+          <div id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="culture.html">Korean Culture</a></li>
+                <li><a href="foodtrend.html">Food Trend</a></li>
+                <li><a href="tourism.html">Tourism</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="report.html">Report</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- back to top button -->
+    <!-- this button is taken as reference from W3schools library-->
+    <!-- https://www.w3schools.com/ -->
+    <button onclick="topFunction()" id="topButton" title="Back to top">Top</button>
+
+    <!-- text in the image at top of tourism.html page -->
+    <div id="tourismheaderimage">
+      <img src="img/jejudo.jpg" alt="jeju tangarine tree">
+      <div class="tourismimgtext">Top Places to Visit in Korea</div>
+    </div>
+
+    <!-- clickable Link that leads to article section in the webpage -->
+    <div id="tourismlinks">
+      <div id="tourismlink">
+        <div class="tourismlinkimage">
+          <!-- the image is provided from unsplash website -->
+          <!-- https://unsplash.com/ -->
+          <img src="img/seoul.jpg" alt="seoul city building">
+          <!-- the link will hover underline when the mouse move over it -->
+          <a href="#seoultourism">
+            <div class="articletext">Top Places to Visit in Seoul</div>
+          </a>
+        </div>
+        <div class="tourismlinkimage">
+          <!-- this image is taken from pixabay -->
+          <!-- https://pixabay.com/ -->
+          <img src="img/jejuisland.jpg" alt="jeju island sea">
+          <!-- the link will hover underline when the mouse move over it -->
+          <a href="#jejutourism">
+            <div class="articletext">Top Places to Visit in Jeju</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- the image in this webpage is provided from unsplash website -->
+    <!-- https://unsplash.com/ -->
+    <div id="tourismcontent">
+      <a id="seoultourism">
+        <h1>Top Places to Visit in Seoul</h1>
+        <hr>
+        <!-- Article description (Author,Photo origin,The date of the article was made) -->
+        <div class="articledesription">BY YUKI SOO</div>
+        <div class="articledesription">PHOTO PROVIDED BY UNSPLASH WEBSITE</div>
+        <div class="articledate">AUG 30,2021</div>
+
+        <div class="tourismarticle">
+          <p>
+            South Korea's capital and largest city is Seoul. This place is also one of the most visited city in 
+            South Korea by travelers. Seoul has not only modern buildings, but also some traditional buildings, 
+            such as hanoks (traditional Korean houses), traditional markets, and Korean castles. So, this place is one of the best place to visit in Korea 
+            as they not only show you their latest trend but also their tradition and culture. There are three places that I wanted to 
+            share with you which is Gwangjang Night Market, Myeongdong and Insadong.<br><br>
+          </p>
+          <h2>Gwangjang Market</h2>
+          <img src="img/pancake.jpg" alt="owner frying Korean pancake">
+          <p>
+            One of the earliest and largest traditional markets in South Korea is Gwangjang Market. Gwangjang Market consists 
+            of many different types of stores such as fashion, daily need, food etc. Street food is popular in this market.
+            They have Spicy Rice Cake, Kimbap, Korean pancake, Dumplings, Donuts and many more. The most popular food is 
+            Bindaetteok (Korean Mung Bean pancake), Spicy Rice cake, Korean traditional Donut and Nude Kimbap. The owner are 
+            very kind and friendly so I recommend you to visit Gwangjang Market if you are interested with their traditions and 
+            food culture.
+          </p>
+            <!-- address and hours of operations information was taken from visit seoul website -->
+            <!-- https://english.visitseoul.net/index -->
+            <h3>Address</h3>
+            Location: 03195  88 Changgyeonggung-ro, Jongno-gu, Seoul  
+            <h3>Hours of Operations</h3>   
+            Daily, 09:00 - 18:00 *Closed Sundays*<br>
+            Food Alley, Daily 09:00 - 23:00 *Closed Sundays*<br>
+            Guide Shopping Street, Daily 10:00 - 19:00 *Closed Sundays*<br>
+        </div>
+
+        <div class="tourismarticle">
+          <h2>Myeongdong</h2>
+          <img src="img/seoul.jpg" alt="Myeong-Dong street">
+          <p>
+            Myeongdong is a place full of cosmetic shops, luxury brands, cafes and restaurants. Myeongdong are mostly 
+            visited by youngsters as it is a place that follows the latest trend in Korea. So, if you want something that is from 
+            the latest trend Myeongdong is a perfect place. While you shop for goods, you can have some street food at the Myeongdong
+            Night Market. Some famous foods are grilled cheese lobster, Korean egg buns and tornado potatoes. 
+            There are rows of restaurants in Myeongdong, selling different types of food.
+            You are able to find the most famous franchaise brand in Myeongdong. For example, fried chicken franchaise such as 
+            BHC, Kyochon, Oppadak and Mom's Touch.
+          </p>
+        </div>
+
+        <div class="tourismarticle">
+          <h2>Insadong</h2>
+          <img src="img/dessert.jpg" alt="Korea traditional dessert">
+          <p>
+            Insadong is a popular place for its cafes and traditional tea houses. Insadong main street is connected 
+            to different alley that was fill with shops and antique sellers. The alley ambience is a mixture of mordern  
+            and tradition times of Korea. Most of the shops are built by hanoks (traditional Korean houses)This place 
+            is popular for photo taking too. For Korean traditional tea house, I recommend 47th Avenue Tea House. They sell 
+            Korean traditional desserts such as Patbingsu (Korean Red bean shaved ice), Cinnamon Ginger Punch and Korean Rice cake.
+            As for Instagram worthy cafe, I recommend Mil Toast House. Their most popular menu is steamed bun.
+          </p>
+        </div>
+      </a>
+
+      <a id="jejutourism">
+        <h1>Top Places to Visit in Jeju</h1>
+        <hr>
+        <!-- Article description (Author,Photo origin,The date of the article was made) -->
+        <div class="articledesription">BY YUKI SOO</div>
+        <div class="articledesription">PHOTO PROVIDED BY UNSPLASH WEBSITE</div>
+        <div class="articledate">AUG 30,2021</div>
+
+        <div class="tourismarticle">
+          <p>
+            Among Korea's islands, Jeju is the most visited. Jeju is famous for its rural culture and natural resources.
+            Jeju Island is surrounded by the sea so, they are famous for their seafood. If you wanted to visit Jeju make sure you 
+            try to rent a car as hotel and restaurants in Jeju are quite far from each other. 
+          </p>
+          <h2>Dongmun Market</h2>
+          <img src="img/fishmarket.jpg" alt="fish tank with seafood">
+          <p>
+            Dongmun Market is the largest traditional market in Jeju Island. Through there you would found some of their local produce and 
+            Jeju specialty. Jeju is famous for their tangerine and seafood and you can buy it at the market. Dongmun Market also 
+            consists of a fish market where locals sells their catch of the day. If you want to have some fresh sashimi you can 
+            buy the seafood you prefer and ask them to prepare it for you. Other than that, the market also sells street foods.
+            You can try out some Jeju specialty such as omeji tteok (Korean rice cake that was coated with red bean) and jeju madarine 
+            Bungeoppang (madarine jam pancake bread).<br><br>
+          </p>
+          <!-- address and hours of operations information was taken from wikipedia -->
+          <!-- https://www.wikipedia.org/ -->
+          <h3>Address</h3>
+          Location: 20, Gwuandeok-ro 14-gil, Jeju
+          <h3>Hours of Operations</h3>   
+          Every day 08:00-21:00
+        </div>
+
+        <div class="tourismarticle">
+          <h2>Osullac Tea Museum</h2>
+          <img src="img/greentea.jpg" alt="green tea farm">
+          <p>
+            Jeju is also famous for it's organically grown, green tea.
+            Jeju green tea is grown on the Jeju green tea farm, with plenty of sunshine and water. Koreans use green tea in many 
+            different ways, such as in skin care products and food. So, I recommend you check out Osullac Tea Museum if you are a tea lover.
+            You can visit their cafe for their green tea desserts such as green tea ice cream and green tea cake. This is a also a 
+            perfect place to buy souvenir for your family. 
+          </p>
+          <!-- address and hours of operations information was taken from wikipedia -->
+          <!-- https://www.wikipedia.org/ -->
+          <h3>Address</h3>
+          Location: 15 Sinhwayeoksa-ro, Andeok-myeon, Seogwipo-si, Jeju-do, South Korea
+          <h3>Hours of Operations</h3>   
+          09:00 – 18:00, open all year around
+        </div>
+
+        <div class="tourismarticle">
+          <h2>Udo Island</h2>
+          <img src="img/seafoodsoup.jpg" alt="seafood noodle soup">
+          <p>
+            Udo Island is a small island on Jeju and it is 3.5 kilometers away from Jeju. You can have a walk and enjoy the scenery of the island.
+            Udo Island is famous for their peanut and you can try their peanut ice cream. The peanut ice cream is vanilla ice cream with roasted 
+            peanut toppings. The amazing thing is you can have it by the sea and take some wonderful photo. Moreover, you should try 
+            the seafood ramen at their restaurant. The seafood is fresh and the ramen broth is super delicious.
+          </p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Related article to above article (Link to other article) -->
+    <!-- recommend other related articles to the user -->
+    <!-- all of the image in this webpage is taken from unsplash website -->
+    <!-- https://unsplash.com/ -->
+    <div id="relatedarticle">
+      <h1>Related Article</h1>
+      <hr>
+      <div id="articlelinks">
+        <div class="articleimage">
+          <img src="img/donut.jpg" alt="a whole rack of donut">
+          <!-- the link will hover underline when the mouse move over it -->
+          <a href="foodtrend.html">
+            <div class="articletext">2021 Top Food Trend</div>
+          </a>
+        </div>
+        <div class="articleimage">
+          <img src="img/koreanmeal.jpg" alt="korean meal">
+          <!-- the link will hover underline when the mouse move over it -->
+          <a href="culture.html">
+            <div class="articletext">Korea Food Culture</div>
+          </a>
+        </div>
+        <div class="articleimage">
+          <img src="img/armystew.jpg" alt="army stew">
+          <!-- the link will hover underline when the mouse move over it -->
+          <a href="recipes.html">
+            <div class="articletext">Korean Inspire Recipes</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign up registration form -->
+    <div id="registrationform">
+      <h1>Sign Up for New Monthly Articles</h1>
+      <hr>
+
+      <div class="registrationcontent">
+      Title:
+      <input type="radio" name = "TITLE" class="TITLE" value="Mr" checked="checked"> Mr
+      <input type="radio" name = "TITLE" class="TITLE" value="Mrs"> Mrs
+      <input type="radio" name = "TITLE" class="TITLE" value="Mdm"> Mdm
+      <input type="radio" name = "TITLE" class="TITLE" value="Ms"> Ms
+      <input type="radio" name = "TITLE" class="TITLE" value="Dr"> Dr
+      </div>
+
+      <div class="registrationcontent">
+      *First name: 
+      <input type="text" id="FIRSTNAME" size="30"><br><br>
+
+      *Last name: 
+      <input type="text" id="LASTNAME" size="30"><br><br>
+
+      *Email: 
+      <input type="text" id="EMAIL" size="30">
+      </div>
+        
+      <button onClick="checkFormData()">Submit</button>
+      <button onClick="resetFormData()">Reset Form</button>
+    </div>
+    
+    <footer>
+      <div id="footer">
+        <div class="footercontent">
+          <h1>Soul Food of Korea</h1>
+          <p>Show you the latest food trend that is happening in Korea,<br> some recipies and top places to visit.</p>
+        </div>
+        <!-- link to other webpages -->
+        <div class="footercontent">
+          <h3>Content</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="culture.html">Korean Culture</a></li>
+            <li><a href="foodtrend.html">Food Trend</a></li>
+            <li><a href="tourism.html">Tourism</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="report.html">Report</a></li>
+          </ul>
+        </div>
+
+        <!-- contact information below is all owned by me -->
+        <div class="footercontent">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>Email: <a href="mailto:sunshineyuki28@gmail.com">sunshineyuki28@gmail.com</a></li>
+            <li>Youtube: <a href="https://www.youtube.com/channel/UCxzEZvWT1LVaO7pvzDATFzA/featured">阳光Yuki</a></li>
+            <li>Instagram: <a href="https://www.instagram.com/nikko_tuzi/">nikko_tuzi</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="copyright"><p>© Copyright 2021. All Rights Reserved</p></div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- header   -->
+  <head>
+    <title>Soul Food Of Korea</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Online Magazine about the topic of Korean Food and some other basic recipes">
+    <meta name="keywords" content="Soul Food of Korea,Korean Food,Korean Food Trend">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="refresh" content="300">
+    <link rel="stylesheet" type="text/css" href="StyleSheets/style.css">
+    <script src="script/myJavaScript.js"> </script>
+  </head>
+     
+  <body>
+    <!-- Navigational links will be displayed here -->
+    <header>
+       <div id="headerlink">
+        <nav>
+          <!-- navigation bar for mobile version is refer to the the South London Online Bookclub website from coursera -->
+          <label for="toggle">&#9776;</label>
+          <input type="checkbox" id= "toggle"/>
+          <div id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="culture.html">Korean Culture</a></li>
+                <li><a href="foodtrend.html">Food Trend</a></li>
+                <li><a href="tourism.html">Tourism</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="report.html">Report</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- back to top button -->
+    <!-- this button is taken as reference from W3schools library-->
+    <!-- https://www.w3schools.com/ -->
+    <button onclick="topFunction()" id="topButton" title="Back to top">Top</button>
+
+    <!-- all of the image was photographed by me Soo Yit Jing -->
+    <!-- recipes link that will lead user to the section of the webpage -->
+    <div id="recipeslinks">
+      <h1>Korean Inspire Recipes</h1>
+      <hr>
+      <div class="recipeslink">
+        <div class="recipeslinkimage">
+          <img src="img/rose.jpg" alt="korean rose rice cake">
+          <a href="#roserecipes">
+            <div class="articletext">Korean Rose Tteokbokki</div>
+          </a>
+        </div>
+        <div class="recipeslinkimage">
+          <img src="img/armystew.jpg" alt="Korean Army stew">
+          <a href="#armystew">
+            <div class="articletext">Korean Army Stew</div>
+          </a>
+        </div>
+        <div class="recipeslinkimage">
+          <img src="img/spicypork.jpg" alt="Korean spicy stir-fried pork">
+          <a href="#spicypork">
+            <div class="articletext">Korean Spicy Stir-Fried Pork</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- all of the image was photographed by me Soo Yit Jing -->
+      <h1>Healthy and Low Calories Recipes</h1>
+      <hr>
+      <div class="recipeslink">
+        <div class="recipeslinkimage">
+          <img src="img/sushi.jpg" alt="tofu sushi">
+          <a href="#tofusushi">
+            <div class="articletext">Low Calorie Tofu Sushi</div>
+          </a>
+        </div>
+        <div class="recipeslinkimage">
+          <img src="img/kimchipancake.jpg" alt="Kimchi Pancake">
+          <a href="#kimchipancake">
+            <div class="articletext">No Flour Kimchi Pancake</div>
+          </a>
+        </div>
+        <div class="recipeslinkimage">
+          <img src="img/morningbread.jpg" alt="Egg mayo bread">
+          <a href="#eggmayo">
+            <div class="articletext">Morning Egg Mayo Bread</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- All of the information and recipes is my own recipes -->
+    <!-- All of the recipes is created by me -->
+    <div id="recipescontent">
+      <h1>Korean Inspire Recipes</h1>
+      <hr>
+      <!-- Korean inspire food recipes -->
+      <div id="koreanrecipes">
+        <a id="roserecipes">
+        <h1>Korean Rose Tteokbokki</h1>
+        <img src="img/rose.jpg" alt="korean rose rice cake">
+        <div class="recipesingredients">
+          <h3>Ingredients</h3>
+          <ul>
+            <li>2 tablespoons of gochujang</li>
+            <li>4 tablespoons of sweet soy sauce</li>
+            <li>1/2 tablespoons of sesame oil</li>
+            <li>1 tablespoons of sugar</li>
+            <li>200 ml of milk</li>
+            <li>one slice of cheese</li>
+          </ul>
+        </div>
+
+        <div class="recipesdirection">
+        <h3>Directions</h3>
+        <ol>
+          <li>First boil the rice cake in boiled water for about 2 minutes.</li>
+          <li>After two minutes, remove the rice cake from the water and set it aside.</li>
+          <li>Add in milk and the all other ingredients except cheese into a saucepan.</li>
+          <li>Wait till it boiled.</li>
+          <li>After boiled add in any ingredients you like into the saucepan together with the rice cake and cook for 5 minutes.</li>
+          <li>Add in the cheese.</li>
+          <li>Stir well and done.</li>
+        </ol>
+        </div>
+        </a>
+
+        <a id="armystew">
+        <h1>Korean Army Stew</h1>
+        <img src="img/armystew.jpg" alt="korean army stew">
+        <div class="recipesingredients">
+          <h3>Ingredients (Soup)</h3>
+          <ul>
+            <li>2 tablespoons of gochujang</li>
+            <li>4 tablespoons of sweet soy sauce</li>
+            <li>1 tablespoons of sesame oil</li>
+            <li>1 tablespoons of sugar</li>
+            <li>1/2 tablespoons of chili powder</li>
+            <li>1 cube of anchovy stock</li>
+            <li>1 litre of water</li>
+          </ul>
+        </div>
+
+        <div class="recipesdirection">
+        <h3>Directions</h3>
+        <ol>
+          <li>Add in any ingredients you like into the pot such ham, sausages, white cabbage, mushrooms and etc.</li>
+          <li>Add in the ingredients os the soup base into the pot.</li>
+          <li>When the ingredients is cooked, you can served it.</li>
+        </ol>
+        </div>
+        </a>
+        
+        <a id="spicypork">
+        <h1>Korean Spicy Stir-Fried Pork</h1>
+        <img src="img/spicypork.jpg" alt="korean stir-fried pork">
+        <div class="recipesingredients">
+          <h3>Ingredients</h3>
+          <ul>
+            <li>1/2 tablespoons of gochujang</li>
+            <li>3 tablespoons of sweet soy sauce</li>
+            <li>1 tablespoons of sesame oil</li>
+            <li>1 tablespoons of sugar</li>
+            <li>1/2 tablespoons of chili powder</li>
+            <li>500g of smocked bacon</li>
+            <li>1 chopped onion</li>
+          </ul>
+        </div>
+
+        <div class="recipesdirection">
+        <h3>Directions</h3>
+        <ol>
+          <li>First, stir fry the chopped onion until golden brown with medium heat.</li>
+          <li>Next, add in the smocked bacon.</li>
+          <li>Add in all of the ingredients into the frying pan.</li>
+          <li>Cook it for about 10 minutes and you are done.</li>
+        </ol>
+        </div>
+        </a>
+      </div>
+
+      <h1>Healthy and Low Calories Recipes</h1>
+      <hr>
+      <div id="healthyrecipes">
+        <a id="tofusushi">
+        <h1>Low Calorie Tofu Sushi</h1>
+        <img src="img/sushi.jpg" alt="tofu sushi">
+        <div class="recipesingredients">
+          <h3>Ingredients</h3>
+          <ul>
+            <li>Tofu sushi skin</li>
+            <li>Tofu</li>
+            <li>Egg</li>
+          </ul>
+        </div>
+
+        <div class="recipesdirection">
+          <h3>Directions</h3>
+          <ol>
+            <li>First, try to remove as many water as you can from the tofu</li>
+            <li>Next, stir fry the tofu on a pan until most of the water has evaporated.</li>
+            <li>Beat an egg and make some scramble egg.</li>
+            <li>Add in tofu and egg into the tofu skin and you are done.</li>
+            <li>You could add on some topping such as mayo or wasabi.</li>
+          </ol>
+        </div>
+        </a>
+
+        <a id="kimchipancake">
+        <h1>No Flour Kimchi Pancake</h1>
+        <img src="img/kimchipancake.jpg" alt="kimchi pancake">
+        <div class="recipesingredients">
+          <h3>Ingredients</h3>
+          <ul>
+            <li>Kimchi</li>
+            <li>Tofu</li>
+            <li>Egg</li>
+          </ul>
+        </div>
+
+        <div class="recipesdirection">
+          <h3>Directions</h3>
+          <ol>
+            <li>First, try to remove as many water as you can from the tofu.</li>
+            <li>Next, stir fry the tofu on a pan until most of the water has evaporated.</li>
+            <li>Try to shape the tofu into a small circle.</li>
+            <li>Beat an egg and pour a little bit of egg onto the tofu until it fully covered it.</li>
+            <li>Top on some kimchi onto the pancake.</li>
+            <li>Fry it until it turns golden brown. Then you are done.</li>
+          </ol>
+        </div>
+        </a>
+
+        <a id="eggmayo">
+        <h1>Morning Egg Mayo Bread</h1>
+        <img src="img/morningbread.jpg" alt="egg mayo bread">
+        <div class="recipesingredients">
+          <h3>Ingredients</h3>
+          <ul>
+            <li>Morning bread</li>
+            <li>3 Egg</li>
+            <li>4 tablespoons of Mayo</li>
+            <li>1/2 Teasponns of Salt</li>
+            <li>1 teasponns of Sugar</li>
+          </ul>
+        </div>
+
+        <div class="recipesdirection">
+          <h3>Directions</h3>
+          <ol>
+            <li>First, boiled some water in a pot that can fully covered the egg when it was put in.</li>
+            <li>Next, reduce the heat to medium and slowly add in the room temperature egg.</li>
+            <li>After 7 and a half minutes, remove it from the pot in put it into a pot of cold water.</li>
+            <li>Peel the egg and smash the egg into small pieces.</li>
+            <li>Add in mayo,sugar and salt.</li>
+            <li>Mix it well.</li>
+            <li>Add it into the morning bread and you are done.</li>
+          </ol>
+        </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sign up registration form -->
+    <div id="registrationform">
+      <h1>Sign Up for New Monthly Articles</h1>
+      <hr>
+
+      <div class="registrationcontent">
+      Title:
+      <input type="radio" name = "TITLE" class="TITLE" value="Mr" checked="checked"> Mr
+      <input type="radio" name = "TITLE" class="TITLE" value="Mrs"> Mrs
+      <input type="radio" name = "TITLE" class="TITLE" value="Mdm"> Mdm
+      <input type="radio" name = "TITLE" class="TITLE" value="Ms"> Ms
+      <input type="radio" name = "TITLE" class="TITLE" value="Dr"> Dr
+      </div>
+
+      <div class="registrationcontent">
+      *First name: 
+      <input type="text" id="FIRSTNAME" size="30"><br><br>
+
+      *Last name: 
+      <input type="text" id="LASTNAME" size="30"><br><br>
+
+      *Email:  
+      <input type="text" id="EMAIL" size="30">
+      </div>
+        
+      <button onClick="checkFormData()">Submit</button>
+      <button onClick="resetFormData()">Reset Form</button>
+    </div>
+    
+    <footer>
+      <div id="footer">
+        <div class="footercontent">
+          <h1>Soul Food of Korea</h1>
+          <p>Show you the latest food trend that is happening in Korea,<br> some recipies and top places to visit.</p>
+        </div>
+        <!-- link to other webpages -->
+        <div class="footercontent">
+          <h3>Content</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="culture.html">Korean Culture</a></li>
+            <li><a href="foodtrend.html">Food Trend</a></li>
+            <li><a href="tourism.html">Tourism</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="report.html">Report</a></li>
+          </ul>
+        </div>
+
+        <!-- contact information below is all owned by me -->
+        <div class="footercontent">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>Email: <a href="mailto:sunshineyuki28@gmail.com">sunshineyuki28@gmail.com</a></li>
+            <li>Youtube: <a href="https://www.youtube.com/channel/UCxzEZvWT1LVaO7pvzDATFzA/featured">阳光Yuki</a></li>
+            <li>Instagram: <a href="https://www.instagram.com/nikko_tuzi/">nikko_tuzi</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="copyright"><p>© Copyright 2021. All Rights Reserved</p></div>
+    </footer>
+  </body>
+</html>

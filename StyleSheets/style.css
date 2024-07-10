@@ -1,0 +1,2083 @@
+/* import font from google fonts */
+/* https://fonts.google.com/ */
+/*  Playfair Display (Regular 400)
+    Kaisei HarunoUmi (Medium 500)
+    Open Sans (Light 300)
+    Roboto (Regular 400)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@500&family=Open+Sans:wght@300&family=Playfair+Display&family=Roboto&display=swap');
+
+/* navigation css (header) */
+*{
+  margin:0;
+  padding:0;
+  font-family:verdana;
+}
+
+/* header css */
+header
+{
+  grid-area: header;
+}
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px)
+{
+  /* homepage header navigation css */
+  /* homepage header navigation bar was refer from CodeSpeedy (How to make transparent navigation bar By Utkarsh Tiwari )  */
+  #homepageheaderlink
+  {
+    width:100%;
+    height:50vh;
+    background-image: url(../img/eggbenedict.jpg);
+    background-size: cover;
+  }
+
+  #homepageheaderlink nav
+  {
+    width: 100%;
+    height: 50px;
+    background-color:#0001;
+    line-height: 50px;
+    top: 0;
+    text-align: left;
+    position: fixed;
+  }
+
+  #homepageheaderlink nav ul
+  {
+    background-color: rgba(100,100,100,0.8);
+    z-index: 1;
+    position:fixed;
+  }
+
+  #homepageheaderlink nav ul li
+  {
+    list-style-type: none;
+    display: block;
+    transition: 0.7s all;
+  }
+
+  #homepageheaderlink nav ul li a
+  {
+    text-decoration: none;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 1em;
+    display:inline-block;
+    padding:10px;
+  }
+
+  /* Other sub pages header navigation css */
+  #headerlink
+  {
+    width: 100%;
+    height: 50px;
+    background-color:rgb(255, 247, 201);
+    line-height: 50px;
+    position: relative;
+  }
+
+  #headerlink nav ul
+  {
+    background-color: rgb(255, 247, 201);
+    z-index: 1;
+    position:relative;
+  }
+  #headerlink nav ul li
+  {
+    list-style-type: none;
+    display: block;
+    text-align: center;
+  }
+  #headerlink nav ul li a
+  {
+    text-decoration: none;
+    color:rgb(43, 105, 52);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 1em;
+    display:inline-block;
+    padding:10px;
+  }
+
+  /* all the webpages navigation css */
+  nav ul li:hover
+  {
+    background-color:rgba(0,0,0,0.2);
+  }
+
+  nav #menu
+  {
+    display: none;
+    border-radius: 20px;
+    width:100%;
+    clear: right;
+  }
+
+  #toggle
+  {
+    display: none;
+  }
+
+  #toggle:checked + #menu
+  {
+    display: block;
+
+  }
+
+  label
+  {
+    display: block;
+    cursor: pointer;
+    font-size:28px;
+    color: white;
+    float:right;
+    margin-right: 20px;
+    position: relative;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 760px)
+{
+  /* homepage header navigation css */
+  #homepageheaderlink
+  {
+    width:100%;
+    height:100vh;
+    background-image: url(../img/eggbenedict.jpg);
+    background-size: cover;
+  }
+
+  #homepageheaderlink nav
+  {
+    width: 100%;
+    height: 50px;
+    background-color:#0001;
+    line-height: 50px;
+    position: relative;
+    top: 0;
+  }
+  #homepageheaderlink nav ul li
+  {
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.7s all;
+  }
+
+  #homepageheaderlink nav ul li a
+  {
+    text-decoration: none;
+    color:#fff;
+    padding: 20px;
+  }
+
+  /* Other sub pages header navigation css */
+  #headerlink
+  {
+    width: 100%;
+    height: 50px;
+    background-color:rgb(255, 247, 201);
+    line-height: 50px;
+  }
+
+  #headerlink nav ul li
+  {
+    list-style-type: none;
+    display: inline-block;
+  }
+  #headerlink nav ul li a
+  {
+    text-decoration: none;
+    color:rgb(43, 105, 52);
+    padding: 20px;
+  }
+
+  /* all the webpages navigation css */
+  nav ul
+  {
+    float: left;
+    margin-left: 30px;
+  }
+
+  nav ul li:hover
+  {
+    background-color:rgba(0,0,0,0.2);
+  }
+
+  label
+  {
+    margin: 0 40px 0 0;
+    font-size: 26px;   
+    text-align: center;
+    display: none;
+  }
+
+  #toggle
+  {
+    display: none;
+  }
+}
+
+/* Footer Css */
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px)
+{
+    /* footer css for all webpages */
+  #footer
+  {
+    background-color: rgb(255, 247, 201);
+    padding: 40px;
+    padding-bottom: 60px;
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-gap: 15px;
+  }
+  #footer h1
+  {
+    padding-bottom: 20px;
+    color: rgb(43, 105, 52);
+    font-size: 1.5em;
+  }
+
+  #footer p
+  {
+    font-size:0.7em;
+  }
+
+  .footercontent
+  {
+    text-align: left;
+  }
+
+  .footercontent ul
+  {
+    list-style-type:none;
+  }
+  .footercontent li
+  {
+    padding-bottom: 5px;
+    font-size: 0.7em;
+  }
+
+  .footercontent a
+  {
+    font-size: 1em;
+    text-decoration: none;
+    color:rgb(0,0,0);
+  }
+
+  .footercontent a:hover
+  {
+    color:rgb(240, 137, 29);
+  }
+
+  .footercontent h3
+  {
+    font-size: 0.9em;
+    padding-bottom: 10px;
+    color: rgb(43, 105, 52);
+  }
+
+  #copyright
+  {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(255, 249, 214);
+    color: rgba(43, 105, 52,0.5);
+    border-top: 2px solid rgb(235, 164, 89);
+    font-size: small;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 760px)
+{
+  /* footer css for all webpages */
+  #footer
+  {
+    background-color: rgb(255, 247, 201);
+    padding: 50px;
+    padding-bottom: 60px;
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 50% 20% 30%;
+    grid-gap: 20px;
+  }
+  #footer h1
+  {
+    padding-bottom: 20px;
+    color: rgb(43, 105, 52);
+  }
+
+  #footer p
+  {
+    font-size:1em;
+  }
+
+  .footercontent
+  {
+    text-align: left;
+  }
+
+  .footercontent ul
+  {
+    list-style-type:none;
+  }
+  .footercontent li
+  {
+    padding-bottom: 5px;
+  }
+
+  .footercontent a
+  {
+    font-size: 1.1em;
+    text-decoration: none;
+    color:rgb(0,0,0);
+  }
+
+  .footercontent a:hover
+  {
+    color:rgb(240, 137, 29);
+  }
+
+  .footercontent h3
+  {
+    font-size: 1.3em;
+    padding-bottom: 10px;
+    color: rgb(43, 105, 52);
+  }
+
+  #copyright
+  {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(255, 249, 214);
+    color: rgba(43, 105, 52,0.5);
+    border-top: 2px solid rgb(235, 164, 89);
+    font-size: small;
+  }
+}
+
+/* Registration sign up form css */
+#resgistrationform
+{
+  grid-area: register;
+}
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px)
+{
+  #registrationform
+  {
+    text-align: center;
+    margin: 10%;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    padding: 50px;
+    background-color:rgb(255, 247, 201) ;
+    color:  rgb(43, 105, 52);
+    font-size: 12px;
+  }
+
+  #registrationform h1
+  {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.7em;
+  }
+
+  #registrationform hr
+  {
+    border: 0;
+    border-top: 3px solid rgb(235, 164, 89);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: 90%;
+  }
+
+  #registrationform button
+  {
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  .registrationcontent
+  {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    color: black;
+  }
+}
+/* Desktop */
+@media only screen and (min-width: 760px)
+{
+    #registrationform
+  {
+    text-align: center;
+    margin: 20%;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    padding: 50px;
+    background-color:rgb(255, 247, 201) ;
+    color:  rgb(43, 105, 52);
+  }
+
+  #registrationform h1
+  {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 3em;
+  }
+
+  #registrationform hr
+  {
+    border: 0;
+    border-top: 3px solid rgb(235, 164, 89);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: 90%;
+  }
+
+  #registrationform button
+  {
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  .registrationcontent
+  {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    color: black;
+  }
+}
+
+/* index.html body css */
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px)
+{
+  #homepagecontent
+  {
+    padding: 90px;
+    padding-bottom: 0;
+  }
+  #homepagecontent hr
+  {
+    margin-bottom: 5%;
+    margin-top: 5%;
+    border: 0;
+    border-top: 1px solid rgba(24, 58, 29,0.5);
+  }
+  #homepagecontent h1
+  {
+    font-size: 1.5em;
+    padding-bottom: 20px;
+    color:rgb(240, 160, 75);
+  }
+
+  #aboutus img
+  {
+    max-width: 35%;
+    height: auto;
+    float: right;
+    margin-left: 25px;
+  }
+
+  #homepagecontent p
+  {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    letter-spacing: .005em;
+    line-height: 1.6;
+    color:rgb(24, 58, 29);
+    padding-bottom: 11%;
+  }
+
+  #topplaces img
+  {
+    max-width: 35%;
+    float: left;
+    margin-right: 25px;
+  }
+
+  #lowcaloriesrecipes img
+  {
+    max-width: 35%;
+    float:right;
+    margin-left: 25px;
+  }
+
+  #topplaces button 
+  {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.005em;
+    color: white;
+    border-radius: 6px;
+    background-color: rgb(43, 105, 52);
+    padding: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  /* index page button css */
+  #topplaces button:hover 
+  {
+    background-color: gray;
+  }
+
+  #lowcaloriesrecipes button 
+  {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.005em;
+    color: white;
+    border-radius: 6px;
+    background-color: rgb(43, 105, 52);
+    padding: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  #lowcaloriesrecipes button:hover 
+  {
+    background-color: gray;
+  }
+}
+
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 760px)
+{
+  #homepagecontent
+  {
+    padding: 90px;
+    padding-bottom: 0;
+  }
+  #homepagecontent hr
+  {
+    margin-bottom: 5%;
+    margin-top: 5%;
+    border: 0;
+    border-top: 1px solid rgba(24, 58, 29,0.5);
+  }
+  #homepagecontent h1
+  {
+    padding-bottom: 20px;
+    color:rgb(240, 160, 75);
+  }
+
+  #aboutus img
+  {
+    max-width: 35%;
+    height: auto;
+    float: right;
+    margin-left: 25px;
+  }
+
+  #homepagecontent p
+  {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 22px;
+    letter-spacing: .005em;
+    line-height: 1.6;
+    color:rgb(24, 58, 29);
+    padding-bottom: 11%;
+  }
+
+  #topplaces img
+  {
+    max-width: 35%;
+    float: left;
+    margin-right: 25px;
+  }
+
+  #lowcaloriesrecipes img
+  {
+    max-width: 35%;
+    float:right;
+    margin-left: 25px;
+  }
+
+  #topplaces button 
+  {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 0.005em;
+    color: white;
+    border-radius: 6px;
+    background-color: rgb(43, 105, 52);
+    padding: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  /* index page button css */
+  #topplaces button:hover 
+  {
+    background-color: gray;
+  }
+
+  #lowcaloriesrecipes button 
+  {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 0.005em;
+    color: white;
+    border-radius: 6px;
+    background-color: rgb(43, 105, 52);
+    padding: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  #lowcaloriesrecipes button:hover 
+  {
+    background-color: gray;
+  }
+}
+
+/* home page top article of the month css */
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px)
+{
+  .toparticle
+  {
+    margin-bottom: 45%;
+
+  }
+  .toparticle h1
+  {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    color:black;
+    letter-spacing: .005em;
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+
+  .toparticle hr
+  {
+    border: 0;
+    border-top: 2px solid rgba(24, 58, 29,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: 90%;
+  }
+
+  .toparticleimage img
+  {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .toparticlelinks 
+  {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+  }
+
+  .toparticleimage 
+  {
+    text-align: center;
+    position: relative;
+  }
+
+  /* homepage link content css */
+  #homepagelinks h1
+  {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.7em;
+    color:rgb(24, 58, 29);
+    padding-top: 20px;
+  }
+
+  #homepagelinks hr
+  {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: 0;
+    border-top: 2px solid rgba(24, 58, 29,0.5);
+  }
+
+  .contentimage img
+  {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  #contentlinks {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+  }
+
+  .contentimage {
+    text-align: center;
+    position: relative;
+    color: white;
+    font-size: 1em;
+  }
+
+  .imagetext
+  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Link below the article image of every webpage css*/
+  .articletext
+  {
+    position: absolute;
+    font-family:'Playfair Display', serif;
+    font-size: 0.8em;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .articletext:hover
+  {
+    text-decoration: underline;
+  }
+}
+
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 760px)
+{
+  .toparticle
+  {
+    margin-top: 13%;
+    margin-bottom: 7%;
+  }
+  .toparticle h1
+  {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: .005em;
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+
+  .toparticle hr
+  {
+    border: 0;
+    border-top: 2px solid rgba(24, 58, 29,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: 90%;
+  }
+
+  .toparticleimage img
+  {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .toparticlelinks 
+  {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .toparticleimage 
+  {
+    text-align: center;
+    position: relative;
+  }
+
+  /* homepage link content css */
+  #homepagelinks h1
+  {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2.5em;
+    color:rgb(24, 58, 29);
+    padding-top: 100px;
+  }
+
+  #homepagelinks hr
+  {
+    margin-bottom: 40px;
+    margin-top: 10px;
+    border: 0;
+    border-top: 2px solid rgba(24, 58, 29,0.5);
+  }
+
+  .contentimage img
+  {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  #contentlinks {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+  }
+
+  .contentimage {
+    text-align: center;
+    position: relative;
+    color: white;
+    font-size: 2em;
+  }
+
+  .imagetext
+  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Link below the article image of every webpage css*/
+  .articletext
+  {
+    position: absolute;
+    font-family:'Playfair Display', serif;
+    font-size: 1.6em;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .articletext:hover
+  {
+    text-decoration: underline;
+  }
+}
+
+/* Food culture body css */
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px)
+{
+    #cultureimage
+  {
+    padding: 90px;
+    padding-bottom: 70px;
+    padding-top: 50px;
+  }
+
+  #cultureimage h1
+  {
+    text-align: center;
+    letter-spacing: -.005em;
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-size: 35px;
+    font-weight: 400;
+    padding-bottom: 5px;
+  }
+  #cultureimage hr
+  {
+    border: 0;
+    border-top: 2px solid rgba(24, 58, 29,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 200px;
+  }
+  #cultureimage img
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+
+  .articledesription
+  {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: .117em;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .articledate
+  {
+    text-align: center;
+    color: gray;
+    font-size: 12px;
+    margin-bottom: 4%;
+  }
+
+  #culturecontent
+  {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 100px;
+  }
+
+  #culturecontent h2
+  {
+    margin-bottom: 30px;
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-size: 20px;
+    letter-spacing: .008em;
+  }
+
+  #culturecontent h3
+  {
+    margin-bottom: 10px;
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-size: 15px;
+    letter-spacing: .008em;
+  }
+
+  #culturecontent p
+  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+  }
+
+  #culturecontent img
+  {
+    max-width: 45%;
+    height: auto;
+    margin-left: 15px;
+    float: right;
+  }
+
+  #imagefloatleft
+  {
+    float: left;
+  }
+
+  .culturearticle
+  {
+    margin-bottom: 100px;
+  }
+}
+
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 760px)
+{
+  #cultureimage
+  {
+    padding: 90px;
+    padding-bottom: 70px;
+  }
+
+  #cultureimage h1
+  {
+    text-align: center;
+    letter-spacing: -.005em;
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-size: 45px;
+    font-weight: 400;
+    padding-bottom: 5px;
+  }
+  #cultureimage hr
+  {
+    border: 0;
+    border-top: 2px solid rgba(24, 58, 29,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 200px;
+  }
+  #cultureimage img
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+  }
+
+  .articledesription
+  {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: .117em;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .articledate
+  {
+    text-align: center;
+    color: gray;
+    font-size: small;
+    margin-bottom: 4%;
+  }
+
+  #culturecontent
+  {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 200px;
+  }
+
+  #culturecontent h2
+  {
+    margin-bottom: 30px;
+    font-family: 'Kaisei HarunoUmi', serif;
+    letter-spacing: .008em;
+  }
+
+  #culturecontent h3
+  {
+    margin-bottom: 10px;
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-size: 20px;
+    letter-spacing: .008em;
+  }
+
+  #culturecontent p
+  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 1.6em;
+  }
+
+  #culturecontent img
+  {
+    max-width: 45%;
+    height: auto;
+    margin-left: 15px;
+    /* float: right; */
+  }
+
+  #imagefloatleft
+  {
+    float: left;
+  }
+
+  .culturearticle
+  {
+    margin-bottom: 100px;
+  }
+}
+
+/* Related article css */
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px)
+{
+  #relatedarticle h1
+  {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    letter-spacing: .005em;
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+
+  #relatedarticle hr
+  {
+    border: 0;
+    border-top: 2px solid rgba(24, 58, 29,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 90%;
+  }
+
+  .articleimage img
+  {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  #articlelinks 
+  {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .articleimage 
+  {
+    text-align: center;
+    position: relative;
+  }
+
+}
+
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 760px)
+{
+  #relatedarticle h1
+  {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: .005em;
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+
+  #relatedarticle hr
+  {
+    border: 0;
+    border-top: 2px solid rgba(24, 58, 29,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 90%;
+  }
+
+  .articleimage img
+  {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  #articlelinks 
+  {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 70px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  .articleimage 
+  {
+    text-align: center;
+    position: relative;
+  }
+}
+
+ /* foodtrend webpage css  */
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px)
+{
+  #foodtrendlinks h1
+  {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    letter-spacing: .005em;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 5%;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+
+  #foodtrendlinks hr
+  {
+    border: 0;
+    border-top: 2px solid rgba(24, 58, 29,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 90%;
+  }
+
+  .foodtrendlinkimage img
+  {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #foodtrendlink
+  {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    padding: 50px;
+    padding-top: 0;
+    padding-bottom: 150px;
+  }
+
+  .foodtrendlinkimage
+  {
+    text-align: center;
+    position: relative;
+    font-size: 1.5em;
+  }
+
+  #foodtrendcontent
+  {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  #foodtrendcontent h1
+  {
+    text-align: center;
+    letter-spacing: -.005em;
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 5px;
+  }
+  #foodtrendcontent hr
+  {
+    border: 0;
+    border-top: 2px solid rgba(24, 58, 29,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 200px;
+  }
+
+  #foodtrendcontent p
+  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.6em;
+  }
+
+  #foodtrendcontent img
+  {
+    max-width: 40%;
+    height: auto;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    float: right;
+    clear: both;
+  }
+
+  .foodtrendarticle 
+  {
+    margin-bottom: 30%;
+  }
+}
+
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 760px)
+{
+  #foodtrendlinks h1
+  {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    letter-spacing: .005em;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 5%;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+
+  #foodtrendlinks hr
+  {
+    border: 0;
+    border-top: 2px solid rgba(24, 58, 29,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 90%;
+  }
+
+  .foodtrendlinkimage img
+  {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #foodtrendlink
+  {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 70px;
+    padding: 200px;
+    padding-top: 0;
+    padding-bottom: 250px;
+  }
+
+  .foodtrendlinkimage
+  {
+    text-align: center;
+    position: relative;
+    font-size: 1.6em;
+  }
+
+  #foodtrendcontent
+  {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  #foodtrendcontent h1
+  {
+    text-align: center;
+    letter-spacing: -.005em;
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-size: 45px;
+    font-weight: 400;
+    padding-bottom: 5px;
+  }
+  #foodtrendcontent hr
+  {
+    border: 0;
+    border-top: 2px solid rgba(24, 58, 29,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 200px;
+  }
+
+  #foodtrendcontent p
+  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 1.6em;
+  }
+
+  #foodtrendcontent img
+  {
+    max-width: 40%;
+    height: auto;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    float: right;
+    clear: both;
+  }
+
+  .foodtrendarticle 
+  {
+    margin-bottom: 30%;
+  }
+}
+
+/* tourism webpage css */
+/* tourism related article */
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px)
+{
+  #tourismheaderimage
+  {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  #tourismheaderimage img
+  {
+    width: 100%;
+    height: auto;
+  }
+
+  .tourismimgtext
+  {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    letter-spacing: .005em;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .tourismlinkimage img
+  {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  #tourismlink
+  {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 50px;
+    padding-top: 50px;
+    margin-bottom: 15%;
+  }
+
+  .tourismlinkimage
+  {
+    text-align: center;
+    position: relative;
+    font-size: 1.4em;
+  }
+
+  /* top places to visit article */
+  #tourismcontent
+  {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  #tourismcontent h1
+  {
+    text-align: center;
+    letter-spacing: -.005em;
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-size: 35px;
+    font-weight: 400;
+    padding-bottom: 5px;
+  }
+
+  #tourismcontent h2 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-size: 20px;
+    letter-spacing: .008em;
+  }
+
+  #tourismcontent h3 {
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-size: 15px;
+    letter-spacing: .008em;
+  }
+
+  #tourismcontent hr
+  {
+    border: 0;
+    border-top: 2px solid rgba(24, 58, 29,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 200px;
+  }
+
+  #tourismcontent p
+  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.6em;
+  }
+  .tourismarticle
+  {
+    padding-bottom: 90px;
+  }
+
+  .tourismarticle img
+  {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+}
+
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 760px)
+{
+  #tourismheaderimage
+  {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  #tourismheaderimage img
+  {
+    width: 100%;
+    height: auto;
+  }
+
+  .tourismimgtext
+  {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2em;
+    letter-spacing: .005em;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .tourismlinkimage img
+  {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #tourismlink
+  {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 70px;
+    padding: 200px;
+    padding-top: 100px;
+  }
+
+  .tourismlinkimage
+  {
+    text-align: center;
+    position: relative;
+    font-size: 1.6em;
+  }
+
+  /* top places to visit article */
+  #tourismcontent
+  {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  #tourismcontent h1
+  {
+    text-align: center;
+    letter-spacing: -.005em;
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-size: 45px;
+    font-weight: 400;
+    padding-bottom: 5px;
+  }
+
+  #tourismcontent h2 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-family: 'Kaisei HarunoUmi', serif;
+    letter-spacing: .008em;
+  }
+
+  #tourismcontent h3 {
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-family: 'Kaisei HarunoUmi', serif;
+    letter-spacing: .008em;
+  }
+
+  #tourismcontent hr
+  {
+    border: 0;
+    border-top: 2px solid rgba(24, 58, 29,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 200px;
+  }
+
+  #tourismcontent p
+  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 1.6em;
+  }
+  .tourismarticle
+  {
+    padding-bottom: 90px;
+  }
+
+  .tourismarticle img
+  {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+}
+
+/* Recipes webpage css */
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px)
+{
+  #recipeslinks h1
+  {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6em;
+    letter-spacing: .005em;
+    margin-left: 60px;
+    margin-top: 50px;
+    text-align: left;
+    padding-bottom: 5px;
+  }
+
+  #recipeslinks hr
+  {
+    border: 0;
+    border-top: 2px solid rgba(24, 58, 29,0.5);
+    margin-left: 60px;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 90%;
+  }
+
+  .recipeslink
+  {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 60px;
+    padding-top: 0;
+    padding-bottom: 70px;
+  }
+
+  .recipeslinkimage
+  {
+    text-align: center;
+    position: relative;
+    font-size: 1.2em;
+  }
+
+  .recipeslinkimage img
+  {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  #recipescontent
+  {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  #recipescontent h1
+  {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7em;
+    letter-spacing: .005em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+
+  #recipescontent hr
+  {
+    border: 0;
+    border-top: 2px solid rgba(24, 58, 29,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 90%;
+  }
+
+  #recipescontent img
+  {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  /* all recipes css */
+  .recipesingredients h3
+  {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    text-align: left;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+
+  .recipesdirection h3
+  {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    text-align: left;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .recipesdirection ol
+  {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9em;
+    text-align: left;
+    margin-bottom: 100px;
+    margin-top: 30px;
+  }
+
+  .recipesdirection li
+  {
+    padding-bottom: 10px;
+  }
+
+  /* Korean inspire recipes css */
+  #koreanrecipes
+  {
+    text-align: center;
+  }
+
+  #koreanrecipes h1
+  {
+    margin-bottom: 30px;
+  }
+
+  #koreanrecipes ul
+  {
+    text-align: left;
+    margin-bottom: 50px;
+    font-size: 0.9em;
+  }
+
+  #koreanrecipes li
+  {
+    padding-bottom: 10px;
+  }
+
+  /* healthy recipes css */
+  #healthyrecipes
+  {
+    text-align: center;
+  }
+
+  #healthyrecipes h1
+  {
+    margin-bottom: 30px;
+  }
+
+  #healthyrecipes ul
+  {
+    text-align: left;
+    margin-bottom: 70px;
+    font-size: 0.9em;
+  }
+
+  #healthyrecipes li
+  {
+    padding-bottom: 10px;
+  }
+
+}
+
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 760px)
+{
+  #recipeslinks h1
+  {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    letter-spacing: .005em;
+    margin-left: 60px;
+    margin-top: 60px;
+    text-align: left;
+    padding-bottom: 5px;
+  }
+
+  #recipeslinks hr
+  {
+    border: 0;
+    border-top: 2px solid rgba(24, 58, 29,0.5);
+    margin-left: 60px;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 90%;
+  }
+
+  .recipeslink
+  {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    padding: 60px;
+    padding-top: 0;
+    padding-bottom: 100px;
+  }
+
+  .recipeslinkimage
+  {
+    text-align: center;
+    position: relative;
+    font-size: 1em;
+  }
+
+  .recipeslinkimage img
+  {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  #recipescontent
+  {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  #recipescontent h1
+  {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    letter-spacing: .005em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+
+  #recipescontent hr
+  {
+    border: 0;
+    border-top: 2px solid rgba(24, 58, 29,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 90%;
+  }
+
+  #recipescontent img
+  {
+    max-width: 65%;
+    max-height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  /* all recipes css */
+  .recipesingredients h3
+  {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7em;
+    text-align: left;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-left:180px ;
+  }
+
+  .recipesdirection h3
+  {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9em;
+    text-align: left;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .recipesdirection ol
+  {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    text-align: left;
+    margin-bottom: 200px;
+    margin-top: 30px;
+  }
+
+  .recipesdirection li
+  {
+    padding-bottom: 10px;
+  }
+
+  /* Korean inspire recipes css */
+  #koreanrecipes
+  {
+    text-align: center;
+  }
+
+  #koreanrecipes h1
+  {
+    margin-bottom: 30px;
+  }
+
+  #koreanrecipes ul
+  {
+    text-align: left;
+    margin-left:190px;
+    margin-bottom: 100px;
+    font-size: 1.5em;
+  }
+
+  #koreanrecipes li
+  {
+    padding-bottom: 10px;
+  }
+
+  /* healthy recipes css */
+  #healthyrecipes
+  {
+    text-align: center;
+  }
+
+  #healthyrecipes h1
+  {
+    margin-bottom: 30px;
+  }
+
+  #healthyrecipes ul
+  {
+    text-align: left;
+    margin-left:190px;
+    margin-bottom: 100px;
+    font-size: 1.5em;
+  }
+
+  #healthyrecipes li
+  {
+    padding-bottom: 10px;
+  }
+}
+
+/* report.html css */
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px)
+{
+  #reportcontent 
+  {
+    padding: 70px;
+    padding-bottom: 0;
+  }
+
+  #reportcontent h1
+  {
+    padding-bottom: 10px;
+    font-size: 1.6em;
+  }
+
+  #reportcontent h2
+  {
+    color: darkblue;
+    font-size: 1.3em;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  #reportcontent p
+  {
+    font-size: 1em;
+    padding-bottom: 50px;
+    letter-spacing: .005em;
+    line-height: 1.6;
+  }
+
+  #reportcontent img
+  {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .mockup img
+  {
+    margin-bottom: 70px;
+  }
+}
+
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 760px)
+{
+  #reportcontent 
+  {
+    padding: 170px;
+    padding-bottom: 0;
+  }
+
+  #reportcontent h1
+  {
+    padding-bottom: 10px;
+  }
+
+  #reportcontent h2
+  {
+    color: darkblue;
+    font-size: 2.5em;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  #reportcontent p
+  {
+    font-size: 2em;
+    padding-bottom: 50px;
+    letter-spacing: .005em;
+    line-height: 1.6;
+  }
+
+  #reportcontent img
+  {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .mockup img
+  {
+    margin-bottom: 70px;
+  }
+}
+
+/* back to top button css */
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px)
+{
+  #topButton 
+  {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    z-index: 99;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    background-color: rgb(43, 105, 52);
+    color: white;
+    cursor: pointer;
+    padding: 13px;
+    border-radius: 50%;
+  }
+
+  #topButton:hover 
+  {
+    background-color: rgb(240, 160, 75);
+  }
+}
+
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 760px)
+{
+  #topButton 
+  {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: rgb(43, 105, 52);
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 50%;
+  }
+
+  #topButton:hover 
+  {
+    background-color: rgb(240, 160, 75);
+  }
+}

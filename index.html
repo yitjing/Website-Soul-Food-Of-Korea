@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Soul Food Of Korea</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Online Magazine about the topic of Korean Food and some other basic recipes">
+    <meta name="keywords" content="Soul Food of Korea,Korean Food,Korean Food Trend">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="refresh" content="300">
+    <link rel="stylesheet" type="text/css" href="StyleSheets/style.css">
+    <script src="script/myJavaScript.js"> </script>
+  </head>
+     
+  <body>
+    <!-- header -->
+    <!-- Navigational links will be displayed here -->
+    <header>
+       <div id="homepageheaderlink">
+        <nav>
+          <!-- navigation bar for mobile version is refer to the the South London Online Bookclub website from coursera -->
+          <label for="toggle">&#9776;</label>
+          <input type="checkbox" id= "toggle"/>
+          <div id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="culture.html">Korean Culture</a></li>
+                <li><a href="foodtrend.html">Food Trend</a></li>
+                <li><a href="tourism.html">Tourism</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="report.html">Report</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- back to top button -->
+    <!-- this button is taken as reference from W3schools library-->
+    <!-- https://www.w3schools.com/ -->
+    <button onclick="topFunction()" id="topButton" title="Back to top">Top</button>
+
+    <!-- Homepage content -->
+    <div id="homepagecontent">
+      <div id="aboutus">
+        <!-- this is the image of me Soo Yit Jing -->
+        <img src="img/me.jpg" alt="Author Image">
+        <h1>About Us</h1>
+        <p>We will share the beauty of Korea through their food. The cuisine of Korea comprises the culinary arts and customs of its people.
+          We like the taste and meaning behind every kind of Korean food. We will also share some of our own Korean 
+          inspired recipes with you. Through this, you will be able to learn more about Korean food and its culture.
+          This magazine will also show you some of the hottest food trends happening in Korea and some of the places you must visit in Korea.
+         </p>
+      </div>
+      <hr>
+
+      <div id="topplaces">
+        <!-- this image is provided from unsplash website -->
+        <!-- https://unsplash.com/ -->
+        <img src="img/Korea.jpg" alt="Korea Hanok Village">
+        <h1>Top Places in Korea</h1>
+        <p>South Korea is a beautiful country with a long history. Koreans are proud of their country and culture.
+          They have many beautiful and meaningful heritages that still existed long ago. Heritage, traditions and culture 
+          are well preserved by their people. We will show you some of the top delicacies that you must visit in Korea.
+          Different regions of Korea are famous for different types of food because of their different local products.<br>
+          <!-- This will link to the tourism web page for tickets -->
+          <button onclick="window.location.href = 'tourism.html'">Visit Now !</button>
+        </p>
+      </div>
+      <hr>
+
+      <div id="lowcaloriesrecipes">
+        <!-- this image was took by me -->
+        <img src="img/morningbread.jpg" alt="egg mayo bread">
+        <h1>Healthy and Low Calories Recipes</h1>
+        <p>
+          We will show you some of our favorite recipes that can be made easily with minimal ingredients. 
+          It does not require any additional cooking utensils. You just need a non-stick fry pan and a turner. 
+          The recipes are easy to make even if you are an amateur. All of the ingredients listed are easy to find in your 
+          neighborhood supermarket.<br> 
+          <!-- This will link to the recipes web page for tickets -->
+          <button onclick="window.location.href = 'recipes.html'">Visit Now !</button>
+        </p>
+      </div>
+
+    <!-- Related article to above article (Link to other article) -->
+    <!-- recommend other related articles to the user -->
+    <!-- all of the image in this webpage is taken from unsplash website -->
+    <!-- https://unsplash.com/ -->
+    <div class="toparticle">
+      <h1>Top Article of the Month</h1>
+      <hr>
+      <div class="toparticlelinks">
+        <div class="toparticleimage">
+          <img src="img/donut.jpg" alt="a whole rack of donut">
+          <!-- the link will hover underline when the mouse move over it -->
+          <a href="foodtrend.html">
+            <div class="articletext">2021 Top Food Trend</div>
+          </a>
+        </div>
+        <div class="toparticleimage">
+          <img src="img/seoul.jpg" alt="seoul city and building">
+          <!-- the link will hover underline when the mouse move over it -->
+          <a href="tourism.html">
+            <div class="articletext">Top Places To Visit in Seoul</div>
+          </a>
+        </div>
+        <div class="toparticleimage">
+          <img src="img/jejuisland.jpg" alt="jeju island">
+          <!-- the link will hover underline when the mouse move over it -->
+          <a href="tourism.html">
+            <div class="articletext">Top Places To Visit in Jeju</div>
+          </a>
+        </div>
+        <div class="toparticleimage">
+          <img src="img/koreanmeal.jpg" alt="korean meal">
+          <!-- the link will hover underline when the mouse move over it -->
+          <a href="culture.html">
+            <div class="articletext">Korean Food Culture</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related article to above article (Link to other article) -->
+    <!-- recommend other related articles to the user -->
+    <!-- all of the image in this webpage is taken from unsplash website -->
+    <!-- https://unsplash.com/ -->
+    <div class="toparticle">
+      <h1>Top Recipes of the Month</h1>
+      <hr>
+      <div class="toparticlelinks">
+        <div class="toparticleimage">
+          <img src="img/sushi.jpg" alt="sushi">
+          <!-- the link will hover underline when the mouse move over it -->
+          <a href="recipes.html">
+            <div class="articletext">Low Calories Tofu Sushi</div>
+          </a>
+        </div>
+        <div class="toparticleimage">
+          <img src="img/morningbread.jpg" alt="egg mayo bread">
+          <!-- the link will hover underline when the mouse move over it -->
+          <a href="recipes.html">
+            <div class="articletext">Morning Egg Mayo Bread</div>
+          </a>
+        </div>
+        <div class="toparticleimage">
+          <img src="img/armystew.jpg" alt="army stew">
+          <!-- the link will hover underline when the mouse move over it -->
+          <a href="recipes.html">
+            <div class="articletext">Korean Army Stew</div>
+          </a>
+        </div>
+        <div class="toparticleimage">
+          <img src="img/spicypork.jpg" alt="korean stir-fried spicy pork">
+          <!-- the link will hover underline when the mouse move over it -->
+          <a href="recipes.html">
+            <div class="articletext">Korean Spicy Stir-Fried Pork</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+      <!-- The image is clickable and will lead you to the other webpages -->
+      <div id="homepagelinks">
+        <h1>Content</h1>
+        <hr>
+        <div id="contentlinks">
+          <div class="contentimage">
+            <a href="recipes.html">
+              <!-- this image is provided from unsplash website -->
+              <!-- https://unsplash.com/ -->
+              <img src="img/bibimbap.jpg" alt="korean bibimbap">
+            </a>
+            <div class="imagetext">Recipes</div>
+          </div>
+          <div class="contentimage">
+            <a href="tourism.html">
+              <!-- this image is provided from unsplash website -->
+              <!-- https://unsplash.com/ -->
+              <img src="img/jeju.jpg" alt="jeju island tangerine">
+            </a>
+            <div class="imagetext">Top Places</div>
+          </div>
+          <div class="contentimage">
+            <a href="foodtrend.html">
+              <!-- this image is provided from unsplash website -->
+              <!-- https://unsplash.com/ -->
+              <img src="img/friedchicken.jpg" alt="fried chicken and cheese corn">
+            </a>
+            <div class="imagetext">Trend</div>
+          </div>
+          <div class="contentimage">
+            <a href="culture.html">
+              <!-- this image is provided from unsplash website -->
+              <!-- https://unsplash.com/ -->
+              <img src="img/fishcake.jpg" alt="Korea street food fish cake">
+            </a>
+            <div class="imagetext">Culture</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign up registration form -->
+    <div id="registrationform">
+      <h1>Sign Up for New Monthly Articles</h1>
+      <hr>
+
+      <div class="registrationcontent">
+      Title:
+      <input type="radio" name = "TITLE" class="TITLE" value="Mr" checked="checked"> Mr
+      <input type="radio" name = "TITLE" class="TITLE" value="Mrs"> Mrs
+      <input type="radio" name = "TITLE" class="TITLE" value="Mdm"> Mdm
+      <input type="radio" name = "TITLE" class="TITLE" value="Ms"> Ms
+      <input type="radio" name = "TITLE" class="TITLE" value="Dr"> Dr
+      </div>
+
+      <div class="registrationcontent">
+      *First name: 
+      <input type="text" id="FIRSTNAME" size="30"><br><br>
+
+      *Last name: 
+      <input type="text" id="LASTNAME" size="30"><br><br>
+
+      *Email: 
+      <input type="text" id="EMAIL" size="30">
+      </div>
+        
+      <button onClick="checkFormData()">Submit</button>
+      <button onClick="resetFormData()">Reset Form</button>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div id="footer">
+        <div class="footercontent">
+          <!-- The name of the website -->
+          <h1>Soul Food of Korea</h1>
+          <!-- simple elaborate of my website -->
+          <p>Show you the latest food trend that is happening in Korea,<br> some recipies and top places to visit.</p>
+        </div>
+        <!-- extra link that will lead you to the other webpages -->
+        <div class="footercontent">
+          <h3>Content</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="culture.html">Korean Culture</a></li>
+            <li><a href="foodtrend.html">Food Trend</a></li>
+            <li><a href="tourism.html">Tourism</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="report.html">Report</a></li>
+          </ul>
+        </div>
+        <!-- Information of my website -->
+        <!-- all of the information provided is real and accessible -->
+        <div class="footercontent">
+          <h3>Contact Us</h3>
+          <ul>
+            <!-- the email is a public account for my youtube channel -->
+            <!-- the youtube channel is run and created by me Soo Yit Jing -->
+            <!-- I am the sole owner of the youtube channel -->
+            <!-- the instagram account is a public account for my youtube channel -->
+            <li>Email: <a href="mailto:sunshineyuki28@gmail.com">sunshineyuki28@gmail.com</a></li>
+            <li>Youtube: <a href="https://www.youtube.com/channel/UCxzEZvWT1LVaO7pvzDATFzA/featured">阳光Yuki</a></li>
+            <li>Instagram: <a href="https://www.instagram.com/nikko_tuzi/">nikko_tuzi</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="copyright"><p>© Copyright 2021. All Rights Reserved</p></div>
+    </footer>
+  </body>
+</html>
